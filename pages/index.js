@@ -262,7 +262,7 @@ export default function Home() {
         </div>
         <div className={styles.mapContainer}>
           <GoogleMap
-            apiKey={'AIzaSyChB9tyiPclEYKwwLh7WVPDjeEbLrqVOU0'} // set if you need stats etc ...
+            bootstrapURLKeys={{key: process.env.API_KEY}}
             center={[51.4997693, -0.1756972]}
             options={{ mapId: "e44f610fbcf086a3" }}
             zoom={16}>
