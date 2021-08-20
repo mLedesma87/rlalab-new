@@ -98,7 +98,7 @@ export default function Home() {
       </section>
       <section className={styles.section}>
         <div className={styles.sectionTitle}>
-          <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">What we <span className={styles.greenText}>do.</span></h3>
+          <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">What<span className={styles.greenText}> we do.</span></h3>
         </div>
         <div className={styles.sectionMainInfo} data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="0">
           <span className={styles.sectionMainText}>The RLAlab is interested in how the development of synthetic biology 
@@ -178,6 +178,21 @@ export default function Home() {
         <div className={styles.sectionTitle}>
           <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">Who <span className={styles.greenText}>we are.</span></h3>
         </div>
+        <div className={styles.peopleMain}>
+          <div className={styles.peopleMainImg}>
+          </div>
+          <div className={styles.peopleMainDescription} style={{fontSize:'1.3em'}}>
+            <h2>Rodrigo Ledesma-Amaro (the PI)</h2>
+            <h3>Overview</h3>
+            <p>Rodrigo Ledesma-Amaro is a lecturer at the Department of Bioengineering at Imperial College London and is part of the Imperial College Centre for Synthetic Biology (IC-SynB). He is leading a research group at the interface of synthetic biology and metabolic engineering. </p>
+            <p>Rodrigo has published more than 55 articles and patents, has obtained 11 fellowships/scholarships and 8 awards. He has been invited speaker in more than 20 conferences and workshops, including keynote talks. He is involved in editorial activities including works in editorial boards and acts as reviewer for journals and grants, including Nature, H2020 or BBSRC.</p>
+            <h3>Biography</h3>
+            <p>Rodrigo Ledesma-Amaro obtained his PhD at the University of Salamanca under the supervision of Prof. Jose Luis Revuelta, the head of the metabolic engineering group. The PhD thesis is about systems metabolic engineering of A. gossypii for the production of vitamins, nucleosides and lipids. It combines modeling, synthetic biology, systems biology and metabolic engineering techniques and it produced numerous research papers and industrial patents (being currently used by BASF). Before that, Rodrigo coursed an MSc in Microbial Biotechnology at the Universidad Autonoma de Madrid and two undergraduate degrees (Biotechnology and Chemical Engineering) at the University of Salamanca. During his PhD, Rodrigo was a visiting researcher at Prof. Jens Nielsen's group at Chalmers University of Technology (Sweden), at Prof. Jean-Marc Nicaud’s lab at INRA (France) and at Prof. Kamisaka's group at AIST (Japan).
+              After the PhD, he moved to France with a Marie Curie Fellowship and he performed his postdoc in the group of Jean-Marc Nicaud. Most of his postdoctoral research work was done in the oleaginous yeast Yarrowia lipolytica. During those years, Rodrigo engineered this organism to 1) produce different compounds (lipids, lipid-derived chemicals, carotenoids, etc), 2) to be able to use low-cost carbon sources such as lignocellulosic materials or starch and 3) to facilitate the recovery of the products by engineering lipid secretion. During the postdoc, Rodrigo taught synthetic biology related subjects at SUP biotech, Paris.
+            </p>
+            <p>In 2017, he joined Imperial College London as independent research with an Imperial College Research Fellowship and in 2019 he was appointed as lecturer in the Department of Bioengineering. </p>
+          </div>
+        </div>
         <div style={{width:'100%', height: 'auto'}}>
           <Swiper
             slidesPerView={1} 
@@ -200,7 +215,7 @@ export default function Home() {
               <SwiperSlide key={index}>
                 <div style={{display:'flex', flexFlow:'column nowrap', height:'auto'}}>
                   <img src={member.imgUrl} style={{borderRadius:'50%', width:'80px'}} />
-                  <div style={{display:'flex', flexFlow:'column wrap', fontSize:'16pt'}}>
+                  <div style={{display:'flex', flexFlow:'column wrap', fontSize:'1.3em'}}>
                     <h3>{member.name}</h3>
                     <span>{member.description}</span>
                   </div>
@@ -251,6 +266,35 @@ export default function Home() {
             <SwiperSlide><img src="/social5.png" style={{width: '100%', borderRadius:'15px', boxShadow:'2px 2px 2px 1px rgba(0, 0, 0, 0.2)'}}/></SwiperSlide>
             <SwiperSlide><img src="/social6.png" style={{width: '100%', borderRadius:'15px', boxShadow:'2px 2px 2px 1px rgba(0, 0, 0, 0.2)'}}/></SwiperSlide>
           </Swiper>
+        </div>
+      </section>
+      <section className={styles.section}>
+        <div className={styles.sectionTitle}>
+          <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">Contact <span className={styles.greenText}>us.</span></h3>
+        </div>
+        <div className={styles.contactWrapper}>
+          <div>
+            <h3>Dr Rodrigo Ledesma-Amaro</h3>
+            <hr/>
+            <p>Imperial College Centre for Synthetic Biology (IC-CSynB) and the Department of Bioengineeing at Imperial College London</p>
+            <p><a href="https://www.imperial.ac.uk/people/r.ledesma-amaro">https://www.imperial.ac.uk/people/r.ledesma-amaro</a></p>
+            <p>Email: <a href="mailto:r.ledesma-amaro@imperial.ac.uk">r.ledesma-amaro@imperial.ac.uk</a></p>
+            <p>Twitter: <a href="https://twitter.com/ledesmaamaro">@LedesmaAmaro</a></p>
+            <p>ResearchGate: <a href="https://www.researchgate.net/profile/Rodrigo_Ledesma-Amaro">Rodrigo Ledesma Amaro</a></p>
+            <p>Google Scholar: <a href="https://scholar.google.com/citations?user=kWTPnDIAAAAJ&hl=es">Rodrigo Ledesma Amaro</a></p>
+          </div>
+          <div>
+            <h3 >Positions - Join the group</h3>
+            <hr/>
+            <p>If you are a talented and highly motivated researcher/student with knowledge/interest in the research areas of the group and you would like to join us, please email us with your CV and motivation (r.ledesma-amaro@imperial.ac.uk).</p>
+          </div>
+          <div>
+            <h3 >Consulting</h3>
+            <hr />
+            <p>Dr Ledesma-Amaro and the lab believe that academic knowledge has a key role in translational research, and we are currently involved in partnerships with several companies at different levels. We often consider consultancy tasks that relies in our field of expertise. Please contact us for more information (r.ledesma-amaro@imperial.ac.uk).
+            Additional information can be found at:
+            <a href="https://www.imperial-consultants.co.uk/expertise-areas/bioengineering-biotechnology.html">https://www.imperial-consultants.co.uk/expertise-areas/bioengineering-biotechnology.html</a></p>
+          </div>
         </div>
       </section>
       <footer className={styles.footer}>

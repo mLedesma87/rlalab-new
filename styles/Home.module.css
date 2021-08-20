@@ -305,6 +305,37 @@
   position: relative;
 }
 
+.peopleMain {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 30px;
+}
+
+.peopleMainImg {
+  padding: 0 30px;
+  background-image: url('/rodrigo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  filter: grayscale(30%);
+}
+
+.peopleMainDescription {
+  padding: 0 30px;
+}
+
+.contactWrapper {
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  font-size: 1.3em;
+  line-height: 33px;
+}
+
+.contactWrapper a {
+  color: #3b3b3b;
+}
+
 @media (max-width: 600px) {
   .sectionInfo {
     padding: 0;
@@ -320,5 +351,14 @@
   }
   .homeSection {
     background: #fff;
+  }
+  .peopleMain {
+    flex-flow: column wrap;
+  }
+  .peopleMainImg {
+    min-height: 150px;
+  }
+  .peopleMainDescription {
+    padding: 0;
   }
 }
