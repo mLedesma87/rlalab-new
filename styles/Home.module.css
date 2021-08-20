@@ -322,6 +322,8 @@
 
 .peopleMainDescription {
   padding: 0 30px;
+  font-size: 1.3em;
+  line-height: 33px;
 }
 
 .contactWrapper {

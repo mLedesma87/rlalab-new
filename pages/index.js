@@ -178,10 +178,10 @@ export default function Home() {
         <div className={styles.sectionTitle}>
           <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">Who <span className={styles.greenText}>we are.</span></h3>
         </div>
-        <div className={styles.peopleMain}>
+        <div className={styles.peopleMain} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
           <div className={styles.peopleMainImg}>
           </div>
-          <div className={styles.peopleMainDescription} style={{fontSize:'1.3em'}}>
+          <div className={styles.peopleMainDescription}>
             <h2>Rodrigo Ledesma-Amaro (the PI)</h2>
             <h3>Overview</h3>
             <p>Rodrigo Ledesma-Amaro is a lecturer at the Department of Bioengineering at Imperial College London and is part of the Imperial College Centre for Synthetic Biology (IC-SynB). He is leading a research group at the interface of synthetic biology and metabolic engineering. </p>
@@ -193,7 +193,7 @@ export default function Home() {
             <p>In 2017, he joined Imperial College London as independent research with an Imperial College Research Fellowship and in 2019 he was appointed as lecturer in the Department of Bioengineering. </p>
           </div>
         </div>
-        <div style={{width:'100%', height: 'auto'}}>
+        <div style={{width:'100%', height: 'auto'}} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
           <Swiper
             slidesPerView={1} 
             slidesPerColumn={1} 
@@ -215,7 +215,7 @@ export default function Home() {
               <SwiperSlide key={index}>
                 <div style={{display:'flex', flexFlow:'column nowrap', height:'auto'}}>
                   <img src={member.imgUrl} style={{borderRadius:'50%', width:'80px'}} />
-                  <div style={{display:'flex', flexFlow:'column wrap', fontSize:'1.3em'}}>
+                  <div style={{display:'flex', flexFlow:'column wrap', fontSize:'1.3em', lineHeight:'33px'}}>
                     <h3>{member.name}</h3>
                     <span>{member.description}</span>
                   </div>
@@ -229,7 +229,7 @@ export default function Home() {
         <div className={styles.sectionTitle}>
           <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">Our <span className={styles.greenText}>publications.</span></h3>
         </div>
-        <div className={styles.pubList}>
+        <div className={styles.pubList} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
           {!!publications && publications.map((pub,index) => (
             <div className={styles.pubListItem} key={index}>
               <h3>{!!pub.doiUrl ? <a href={pub.doiUrl}>{pub.title}</a> : `${pub.title}`}</h3>
@@ -243,7 +243,7 @@ export default function Home() {
         <div className={styles.sectionTitle}>
           <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0"><span className={styles.greenText}>Socials.</span></h3>
         </div>
-        <div style={{width:'100%'}}>
+        <div style={{width:'100%'}} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
@@ -272,7 +272,7 @@ export default function Home() {
         <div className={styles.sectionTitle}>
           <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="0">Contact <span className={styles.greenText}>us.</span></h3>
         </div>
-        <div className={styles.contactWrapper}>
+        <div className={styles.contactWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
           <div>
             <h3>Dr Rodrigo Ledesma-Amaro</h3>
             <hr/>
@@ -306,7 +306,7 @@ export default function Home() {
         </div>
         <div className={styles.mapContainer}>
           <GoogleMap
-            bootstrapURLKeys={{key: process.env.API_KEY}}
+            bootstrapURLKeys={{key: process.env.NEXT_PUBLIC_API_KEY}}
             center={[51.4997693, -0.1756972]}
             options={{ mapId: "e44f610fbcf086a3" }}
             zoom={16}>
